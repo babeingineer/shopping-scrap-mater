@@ -10,6 +10,9 @@ export class Product {
   name?: string;
 
   @Column("text")
+  size?: string;
+
+  @Column("text")
   image?: string;
 
   @OneToMany(() => Price, (price: Price) => price.product)

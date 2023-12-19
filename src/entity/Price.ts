@@ -12,6 +12,6 @@ export class Price {
   @Column("text")
   price?: string;
 
-  @Column("date")
+  @Column("timestamp")
   date?: Date;
 }
